@@ -68,6 +68,8 @@ function checkNewCompetitions() {
         ) ;
 
 }
-
+app.get('/', (req, res) => {
+    res.send("Node Server is running. Yay!!")
+})
 setInterval(checkNewCompetitions,3000);
 });
