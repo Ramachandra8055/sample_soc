@@ -60,6 +60,10 @@ function checkNewCompetitions() {
 // so the client gets the event a new comp is inserted in database. 
                 socket.emit('all competitions',Competitions);
                 console.log('Number Of Competitions in Flow : ' , Competitions.length) ;
+
+                app.get('/', (req, res) => {
+                    res.send("Node Server is running. Yay!!")
+                })
             }
         ) ;
 
